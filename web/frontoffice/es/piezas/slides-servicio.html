@@ -1,0 +1,23 @@
+<!-- slides servicio determinado-->
+<section id="slider" class="bgwhite">
+	<div class="">		
+    	<ul class="bxslider">
+     	<?
+     		//recuerda como viene la informacion: foto.jpg;titulo-texto#foto2.jpg;titulo2-texto2# ...
+     		$data = explode("#",self::$shop->servicio_default[fotosytexto]);
+			foreach($data as $data){
+				list($foto,$texto)=explode(";",$data);
+				list($titulo,$texto)=explode("-",$texto);
+				//por seguridad, por no pintar algo vacio
+				if ( !$titulo ) continue;
+		?>
+		<li>
+			<img src="/frontoffice/images/<?=$foto?>"/>
+			<div class="slider-caption"><h3><?=$texto?></h3></div>
+		</li>
+        <?}?>
+    	</ul>   
+    </div>
+    <div style="clear:both"></div>
+</section>
+<!-- fin slides-servicio determinado-->

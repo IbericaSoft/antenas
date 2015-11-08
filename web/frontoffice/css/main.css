@@ -1,0 +1,268 @@
+/******************************************# 
+	Personalizacion	IBERICASOFT 2015 
+*******************************************/
+/*********************
+*********************# 
+	RESET
+	http://meyerweb.com/eric/tools/css/reset/ 
+   	v2.0 | 20110126
+   	License: none (public domain)	
+**********************/
+@CHARSET "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*********************
+*********************# 
+	ESTRUCTURA DE LA WEB 
+**********************/
+html, body, div {font-family:"quicksand-regular-webfont";font-smooth:always;}
+@font-face { font-family: 'quicksand-regular-webfont'; src: url('../fonts/quicksand-regular-webfont.eot'); src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/quicksand-regular-webfont.svg#quicksand-regular-webfont') format('svg'), url('../fonts/quicksand-regular-webfont.woff') format('woff'), url('../fonts/quicksand-regular-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'quicksand-bold-webfont'; src: url('../fonts/quicksand-bold-webfont.eot'); src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/quicksand-bold-webfont.svg#Optima Bold') format('svg'), url('../fonts/quicksand-bold-webfont.woff') format('woff'), url('../fonts/quicksand-bold-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'quicksand-italic-webfont'; src: url('../fonts/quicksand-italic-webfont.eot'); src: url('../fonts/quicksand-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/quicksand-italic-webfont.svg#quicksand-italic-webfont') format('svg'), url('../fonts/quicksand-italic-webfont.woff') format('woff'), url('../fonts/quicksand-italic-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'quicksand-bold-webfont_italic'; src: url('../fonts/quicksand-bold-webfont_italic.eot'); src: url('../fonts/quicksand-bold-webfont_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/quicksand-bold-webfont_italic.svg#Optima Bold Italic') format('svg'), url('../fonts/quicksand-bold-webfont_italic.woff') format('woff'), url('../fonts/quicksand-bold-webfont_italic.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'Optima Roman'; src: url('../fonts/optima_roman.eot'); src: url('../fonts/optima_roman.eot?#iefix') format('embedded-opentype'), url('../fonts/optima_roman.svg#Optima Roman') format('svg'), url('../fonts/optima_roman.woff') format('woff'), url('../fonts/optima_roman.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'Optima Bold'; src: url('../fonts/optima_bold.eot'); src: url('../fonts/optima_bold.eot?#iefix') format('embedded-opentype'), url('../fonts/optima_bold.svg#Optima Bold') format('svg'), url('../fonts/optima_bold.woff') format('woff'), url('../fonts/optima_bold.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'Optima Italic'; src: url('../fonts/optima_italic.eot'); src: url('../fonts/optima_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/optima_italic.svg#Optima Italic') format('svg'), url('../fonts/optima_italic.woff') format('woff'), url('../fonts/optima_italic.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'Optima Bold Italic'; src: url('../fonts/optima_bold_italic.eot'); src: url('../fonts/optima_bold_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/optima_bold_italic.svg#Optima Bold Italic') format('svg'), url('../fonts/optima_bold_italic.woff') format('woff'), url('../fonts/optima_bold_italic.ttf') format('truetype'); font-weight: normal; font-style: normal;}
+
+body {background-color:#f5f5f5;font-family:"quicksand-regular-webfont";color:#4AADFF;}
+section {width: 100%;z-index: 0;border-bottom:1px solid silver; padding:2px 0px;}
+a,a:visited,a:active {	text-decoration: none;color: #4AADFF;}
+a:hover {text-decoration: none;color: #7b7b7b;}
+.wrapper{ margin:0px auto; width:900px; }
+/******************
+******************#
+	Bloque HEADER
+******************/
+#header {font-size:32px;font-weight:normal;background:white;color:#4AADFF;width:100%;}
+.logos_left {float:left;width:40%;}
+.logos_right {float:left;width:60%;font-size:52px;text-transform: uppercase;white-space: nowrap;text-align:right;}
+.logos_right span {color:#ED5F08;display:block;font-size:16px;}
+.logos_right font.destacar{color:#E46B56;text-decoration:underline;}
+.logos_right a {color:#ED5F08;font-weight:600}
+#menu ul {text-align: left;}
+#menu ul li {display: inline-block; text-align: left; border-bottom: 3px solid transparent; padding:0px 5px; list-style-image: none;list-style-type: none;font-size:12pt;text-transform: uppercase;font-weight: 600;}
+#menu ul li:hover {border-bottom: 3px solid #4AADFF;color:#4AADFF;}
+/******************#
+	Bloque SLIDER
+******************/
+/* la franja gris de la imagen slider que es el caption de la imagen */
+#slider{ background:url(/frontoffice/images/bg.jpg); no-repeat center center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+.slider-caption{
+	text-align:center;
+    position:absolute;
+    padding:10px;
+    bottom:0px;
+    left:0px;
+    z-index:0;
+    width: 100%;
+   	color:white;
+    background: none repeat scroll 0% 0% rgba(80, 80, 80, 0.75);
+    background-color: rgba(80, 80, 80, 0.75);
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+.slider-caption > h3, .slider-caption > h2, .slider-caption > h1 { color:white; }
+/***************************#
+	Bloque SERVICIO y SLOGAN
+****************************/
+.block-50 > div { padding:10px 0px; }
+.block-50 > div { width:48%; float:left; }
+.rating-s { display:block; padding:5px; 0px; font-size:10pt }
+/***************************#
+	Bloque ESTATICOS 3/4
+****************************/
+.block-33 div { padding:10px 0px; } 
+.block-33 div { width:33%; float:left; text-align:center; margin:0px 0px; font-size:13pt; border-right:1px solid silver; overflow: hidden}
+.block-33 div:nth-of-type(3) { border-right:none; }
+.block-33 div img { width: 300px; }
+.block-33 div:nth-of-type(4) { display: none }
+.block-33 div span.title { font-weight:600 }
+/******************************#
+	Bloque Articulos y Noticias
+*******************************/
+.block-50 span.titulo { display:block; font-weight:600; font-size:12pt; }
+.block-50 img.foto{ max-width:50%; margin:5px; border:3px double silver; }
+.block-50 span.texto { width: 90%; font-size:16px; color:#888; line-height:20px; }
+.block-50 a {text-decoration: underline; }
+/******************************#
+	Bloque FOOTER
+*******************************/
+#footer{ margin:10px 0px; font-size:18px;font-weight:normal;border:0px; }
+#footer span { margin:5px; border-radius:10px; }
+.facebook{display:inline-block;background-image:url(/frontoffice/images/i_facebook.png);background-size:32px 32px;background-repeat:no-repeat;width:32px;height:32px;float:right;}
+.twitter{display:inline-block;background-image:url(/frontoffice/images/i_twitter.png);background-size:32px 32px;background-repeat:no-repeat;width:32px;height:32px;float:right;}
+.blogger{display:inline-block;background-image:url(/frontoffice/images/i_blogger.png);background-size:32px 32px;background-repeat:no-repeat;width:32px;height:32px;float:right;}
+.googleplus{display:inline-block;background-image:url(/frontoffice/images/i_googleplus.png);background-size:32px 32px;background-repeat:no-repeat;width:32px;height:32px;float:right;}
+.youtube{display:inline-block;background-image:url(/frontoffice/images/i_youtube.png);background-size:32px 32px;background-repeat:no-repeat;width:32px;height:32px;float:right;}
+/******************************#
+	Bloque UBICACIONES
+*******************************/
+#ubicaciones {padding:5px 0px;}
+#ubicaciones .column3{width:30%;float:left;}
+#ubicaciones .column4{width:40%;float:left;}
+#ubicaciones .column3 li, 
+#ubicaciones .column4 li { margin:5px; padding:5px;}
+.vava{width:100%;vertical-align:top;}
+.servicios-ubicaciones{ width:45%; float:left; margin:5px; padding:5px; border-bottom:1px solid grey;}
+
+/*********************
+*********************# 
+	GENERICOS 
+**********************/
+h1 {font-size:20pt;font-weight:600}
+h2 {font-size:18pt;font-weight:300}
+.bgwhite{ background-color:white !important;}
+.grey { color:grey !important; }
+.black {color:black !important;}
+.blue {color:#4AADFF !important;}
+
+.fleft { float:left !important; }
+.fright { float:right !important; }
+
+.tcenter { text-align:center !important; } 
+.tleft { text-align:left !important; }
+.tright { text-align:right !important; }
+
+.linearight{ border-right:1px solid silver; }
+/*********************
+*********************# 
+	FORMULARIO contacto 
+**********************/
+.form-popup {
+    display: none;
+    background: #FFF;
+    padding: 5px;
+    border: 1px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    width: 275px !important;
+    z-index: 1000;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+	border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    /* Safari, Chrome */;
+    border:1px solid silver;
+}
+img.btn_close {
+	float: right;
+    margin: -0px -5px 0 0;
+}
+fieldset {
+    border: none;
+}
+form.form .textbox label {
+    display: block;
+    padding-bottom: 4px;
+}
+form.form .textbox span {
+    display: block;
+}
+form.form p, form.form span {
+    color: #999;
+    font-size: 11px;
+    line-height: 18px;
+}
+form.form{ background: #FFF; }
+.textbox textarea{resize: none; height: 100px;font-family:"Optima Roman";}
+.textbox input,.textbox textarea {
+    background: #666666;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #000;
+    border-right: 1px solid #333;
+    border-top: 1px solid #000;
+    color: #fff;
+    border-radius: 1px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 6px 6px 4px;
+    width: 200px;
+    font-family:"Optima Roman";
+}
+form.form input:-moz-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+form.form input::-webkit-input-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+.button {
+    background: -moz-linear-gradient(center top, #4AADFF, #4AADFF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#4AADFF), to(#dddddd));
+    background: -o-linear-gradient(top, #4AADFF, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4AADFF', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 6px 4px;
+    margin: auto 0px;
+    font: 12px;
+    width: 100%;
+}
+.button:hover {
+    background: #ddd;
+}

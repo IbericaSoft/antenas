@@ -1,0 +1,34 @@
+<section id="ubicaciones" class="bgwhite">
+	<div class="wrapper">
+		<?
+				//vamos a crear tres array con entradas aleatorias
+				$arr = array_rand(self::$shop->listadoUbicaciones,60);
+				$arrs= array_chunk($arr,20,true);
+				$as = array('Antenas','Parabólicas','TDT','Reparación antenas','Sintonización antenas','Mantenimiento antenas');
+				$serv = array_rand($as,1);
+				
+		?>
+		
+		<div class="">
+		    <div class="column3">
+		    	<?
+		    		foreach($arrs[0] as $data)
+						echo "<li>".$as[array_rand($as,1)].' '.self::$shop->listadoUbicaciones[$data][ubicacion]."</li>";
+		    	?>
+		    </div>    
+		    <div class="column4">
+		        <?
+		    		foreach($arrs[1] as $data)
+						echo "<li>".$as[array_rand($as,1)].' '.self::$shop->listadoUbicaciones[$data][ubicacion]."</li>";
+		    	?>
+		    </div>    
+		    <div class="column3">
+		        <?
+		    		foreach($arrs[2] as $data)
+						echo "<li>".$as[array_rand($as,1)].' '.self::$shop->listadoUbicaciones[$data][ubicacion]."</li>";
+		    	?>
+		    </div>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+</section>

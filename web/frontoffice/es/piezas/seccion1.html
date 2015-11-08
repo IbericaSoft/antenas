@@ -1,0 +1,27 @@
+<!-- seccion 1 -->
+<section>
+	<div class="wrapper">
+		<div class="block-50">		
+			<div itemscope itemtype="http://schema.org/Product" class="linearight">
+				<h1 itemprop="name" class="servicio"><strong>&ldquo;<?=self::$shop->servicio_default[seo_h1]?>&rdquo;</strong></h1>
+				<div class="servicio rating-s grey" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+					<?
+						//efecto rating corazones
+					for ($i=0;$i<self::getData("media");$i++)
+						echo "<img src=\"/frontoffice/images/rating-heart.png\" width=\"10px\"/>";
+					$gris = 5-self::getData("media");
+					for ($i=0;$i<$gris;$i++)
+						echo "<img src=\"/frontoffice/images/rating-heart-gris.png\" width=\"10px\"/>";
+				?>
+					<span itemprop="ratingValue"><?=self::getData("media")?></span>
+					<span itemprop="reviewCount">&nbsp;(<?=self::getData("total_opiniones")?> opiniones de nuestros servicios, <?=self::getData("positivos")?> positivas)</span>
+				</div>
+			</div>
+	        <div class="eslogan tcenter">
+	        	<h2 class="grey"><strong>&ldquo;<?=self::$shop->slogan_default[slogan]?>&rdquo;</strong></h2>
+	        </div>
+        </div>        
+	</div>	
+	<div style="clear:both"></div>
+</section>
+<!-- fin seccion 1 -->	
