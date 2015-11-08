@@ -315,8 +315,9 @@ function terminarPagina(Navigator $instance, Tienda $shop){
 	$instance->replaceAll("{titleservicio}", $shop->marca_default[seo_title]);
 	$instance->replaceAll("{telefono}", $shop->telefono);
 	$instance->replaceAll("{email}", $shop->email_empresa);
-	$instance->replaceAll("{description}", $shop->servicio_default[seo_meta]);
+	$instance->replaceAll("{description}", $shop->servicio_default[seo_description]);
 	$instance->replaceAll("{metaservicio}", $shop->marca_default[seo_meta]);
+	$instance->replaceAll("{meta}", $shop->servicio_default[seo_meta]);
 	$instance->replaceAll("{ubicacion}", $shop->ubicacion_default[ubicacion]);
 	$instance->replaceAll("{ubicacion_url}", seo_friendly_url($shop->ubicacion_default[ubicacion]));
 	$instance->replaceAll("{marca}", $shop->marca_default[marcamodelo]);

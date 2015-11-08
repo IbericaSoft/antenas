@@ -9,11 +9,11 @@
 				list($titulo,$texto)=explode("-",$texto);
 				//por seguridad, por no pintar algo vacio
 				if ( !$titulo ) continue;
-		?>
-		<li>
-			<img src="/frontoffice/images/<?=$foto?>" alt="<?=$titulo?>"/>
-			<div class="slider-caption"><h3><?=$texto?></h3></div>
-		</li>
+				?>
+				<li>
+					<img src="/frontoffice/images/<?=$foto?>" alt="<?=$titulo?>"/>
+					<div class="slider-caption"><h3><?=$texto?></h3></div>
+				</li>
         <?}?>
     	</ul>   
     </div>

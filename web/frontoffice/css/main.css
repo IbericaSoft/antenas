@@ -66,16 +66,16 @@ html, body, div {font-family:"quicksand-regular-webfont";font-smooth:always;}
 @font-face { font-family: 'Optima Italic'; src: url('../fonts/optima_italic.eot'); src: url('../fonts/optima_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/optima_italic.svg#Optima Italic') format('svg'), url('../fonts/optima_italic.woff') format('woff'), url('../fonts/optima_italic.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 @font-face { font-family: 'Optima Bold Italic'; src: url('../fonts/optima_bold_italic.eot'); src: url('../fonts/optima_bold_italic.eot?#iefix') format('embedded-opentype'), url('../fonts/optima_bold_italic.svg#Optima Bold Italic') format('svg'), url('../fonts/optima_bold_italic.woff') format('woff'), url('../fonts/optima_bold_italic.ttf') format('truetype'); font-weight: normal; font-style: normal;}
 
-body {background-color:#f5f5f5;font-family:"quicksand-regular-webfont";color:#4AADFF;}
+body {background-color:#f5f5f5;font-family:"quicksand-regular-webfont";color:#0576AB;}
 section {width: 100%;z-index: 0;border-bottom:1px solid silver; padding:2px 0px;}
-a,a:visited,a:active {	text-decoration: none;color: #4AADFF;}
+a,a:visited,a:active {	text-decoration: none;color: #0576AB;}
 a:hover {text-decoration: none;color: #7b7b7b;}
 .wrapper{ margin:0px auto; width:900px; }
 /******************
 ******************#
 	Bloque HEADER
 ******************/
-#header {font-size:32px;font-weight:normal;background:white;color:#4AADFF;width:100%;}
+#header {font-size:32px;font-weight:normal;background:white;color:#0576AB;width:100%;}
 .logos_left {float:left;width:40%;}
 .logos_right {float:left;width:60%;font-size:52px;text-transform: uppercase;white-space: nowrap;text-align:right;}
 .logos_right span {color:#ED5F08;display:block;font-size:16px;}
@@ -83,7 +83,7 @@ a:hover {text-decoration: none;color: #7b7b7b;}
 .logos_right a {color:#ED5F08;font-weight:600}
 #menu ul {text-align: left;}
 #menu ul li {display: inline-block; text-align: left; border-bottom: 3px solid transparent; padding:0px 5px; list-style-image: none;list-style-type: none;font-size:12pt;text-transform: uppercase;font-weight: 600;}
-#menu ul li:hover {border-bottom: 3px solid #4AADFF;color:#4AADFF;}
+#menu ul li:hover {border-bottom: 3px solid #0576AB;color:#0576AB;}
 /******************#
 	Bloque SLIDER
 ******************/
@@ -164,7 +164,7 @@ h2 {font-size:18pt;font-weight:300}
 .bgwhite{ background-color:white !important;}
 .grey { color:grey !important; }
 .black {color:black !important;}
-.blue {color:#4AADFF !important;}
+.blue {color:#0576AB !important;}
 
 .fleft { float:left !important; }
 .fright { float:right !important; }
@@ -246,10 +246,10 @@ form.form input::-webkit-input-placeholder {
     text-shadow: 0 0 2px #000;
 }
 .button {
-    background: -moz-linear-gradient(center top, #4AADFF, #4AADFF);
-    background: -webkit-gradient(linear, left top, left bottom, from(#4AADFF), to(#dddddd));
-    background: -o-linear-gradient(top, #4AADFF, #dddddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4AADFF', EndColorStr='#dddddd');
+    background: -moz-linear-gradient(center top, #0576AB, #0576AB);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0576AB), to(#dddddd));
+    background: -o-linear-gradient(top, #0576AB, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0576AB', EndColorStr='#dddddd');
     border-color: #000;
     border-width: 1px;
     border-radius: 4px 4px 4px 4px;
