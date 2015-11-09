@@ -4,8 +4,18 @@
     	<?
     		//importante... si estamos pintando la ubicacion principal, por ejemplo, Madrid, 
 			//pintamos mas enlaces entre ubicaciones, es decir, pintamos los links de ubicaciones
-    		if ( stristr( self::$shop->ubicacion_default[ubicacion], self::$shop->ubicacion_web ) ) {
+    		//if ( stristr( self::$shop->ubicacion_default[ubicacion], self::$shop->ubicacion_web ) ) {
+
+
+	
+			if ( strtoupper(  self::$shop->ubicacion_default[ubicacion] )==strtoupper(self::$shop->ubicacion_web)  ) {
 		?>
+				<div itemprop="review" itemscope itemtype="http://schema.org/Review" class="grey" style="padding:10px;">
+				<h2 class="blue"><span itemprop="name"><?=self::$shop->servicio_default[seo_h1]?></span></h2>
+				<?=self::$shop->servicio_default[seo_description]?><br/>
+				<meta itemprop="datePublished" content="{fecha}"/>			
+				</div>
+				
 				<div class="vava">
 		        		<?foreach(self::$shop->listadoUbicaciones as $data){
         					if ( $data[ubicacion]==self::$shop->ubicacion_default[ubicacion] ) continue;
@@ -26,7 +36,7 @@
 		        				<a class="grey" href="/servicio/<?=self::$shop->servicio_default[seo_url]?>/<?=seo_friendly_url($data[ubicacion])?>.html"><i><?=self::$shop->servicio_default[seo_h1].' '.$data[ubicacion]?></i></a>
 		    				</div>
 		        			<?}?>
-		        </div>
+		        </div>		        		       
         <? } else { ?>
         	
         	<div itemprop="review" itemscope itemtype="http://schema.org/Review" class="grey" style="padding:10px;">
